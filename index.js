@@ -16,18 +16,18 @@ app.get('/', (req, res) => {
       <body>
         <h1>ShotOps Safe Deploy QA</h1>
         <p>This is a disposable demo application.</p>
-        <div class="version">Version v3-bad</div>
+        <div class="version">Version v1</div>
       </body>
     </html>
   `);
 });
 
 app.get('/health', (req, res) => {
-  res.status(500).json({ status: 'error' });
+  res.status(200).json({ status: 'ok' });
 });
 
 app.get('/version', (req, res) => {
-  res.status(200).json({ version: 'v3-bad' });
+  res.status(200).json({ version: 'v1' });
 });
 
 app.listen(port, () => {
