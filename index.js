@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
       <body>
         <h1>ShotOps Safe Deploy QA</h1>
         <p>This is a disposable demo application.</p>
-        <div class="version">Version v2</div>
+        <div class="version">Version v1</div>
       </body>
     </html>
   `);
